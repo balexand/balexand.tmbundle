@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>balexand</string>
+	<key>ordering</key>
+	<array>
+		<string>883E54C4-4E3D-4567-81FF-409CB733EBAD</string>
+		<string>6E0AF71F-3BB8-4001-884C-8D8C319949B9</string>
+	</array>
+	<key>uuid</key>
+	<string>759EFF82-EFA0-4DA8-9B3B-39E58FF16FBF</string>
+</dict>
+</plist>
