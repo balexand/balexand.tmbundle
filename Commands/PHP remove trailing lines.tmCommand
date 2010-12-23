@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+# get rid of all trailing whitespace in PHP files
+
+content = STDIN.read
+if ENV['TM_FILEPATH'] =~ /\.php$/
+  content.sub!(/\s*\z/m, "")
+end
+print content
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>PHP remove trailing lines</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>uuid</key>
+	<string>379C3B0D-B118-49EC-A8C5-6255DF839DF3</string>
+</dict>
+</plist>

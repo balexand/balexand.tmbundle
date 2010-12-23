@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>beforeRunningCommand</key>
+				<string>nop</string>
+				<key>command</key>
+				<string>perl -pe 's/[\t ]+$//g'</string>
+				<key>fallbackInput</key>
+				<string>document</string>
+				<key>input</key>
+				<string>selection</string>
+				<key>name</key>
+				<string>Remove Trailing Spaces in Document / Selection</string>
+				<key>output</key>
+				<string>replaceSelectedText</string>
+				<key>uuid</key>
+				<string>0F8C1F78-6E4C-11D9-91AF-000D93589AF6</string>
+			</dict>
+			<key>command</key>
+			<string>executeCommandWithOptions:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>beforeRunningCommand</key>
+				<string>nop</string>
+				<key>command</key>
+				<string>perl -pe 's/[^\t\n\x20-\xFF]|\x7F|\xC2[\x80-\x9F]//g'</string>
+				<key>fallbackInput</key>
+				<string>document</string>
+				<key>input</key>
+				<string>selection</string>
+				<key>name</key>
+				<string>Remove Unprintable Characters in Document / Selection</string>
+				<key>output</key>
+				<string>replaceSelectedText</string>
+				<key>uuid</key>
+				<string>BEC25DC3-6E4B-11D9-91AF-000D93589AF6</string>
+			</dict>
+			<key>command</key>
+			<string>executeCommandWithOptions:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>beforeRunningCommand</key>
+				<string>nop</string>
+				<key>command</key>
+				<string>#!/usr/bin/env ruby
+
+# get rid of all trailing whitespace in PHP files
+
+content = STDIN.read
+if ENV['TM_FILEPATH'] =~ /\.php$/
+  content.sub!(/\s*\z/m, "")
+end
+print content
+</string>
+				<key>input</key>
+				<string>selection</string>
+				<key>name</key>
+				<string>PHP remove trailing lines</string>
+				<key>output</key>
+				<string>replaceSelectedText</string>
+				<key>uuid</key>
+				<string>379C3B0D-B118-49EC-A8C5-6255DF839DF3</string>
+			</dict>
+			<key>command</key>
+			<string>executeCommandWithOptions:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>beforeRunningCommand</key>
+				<string>saveActiveFile</string>
+				<key>input</key>
+				<string>none</string>
+				<key>name</key>
+				<string>Save Document</string>
+				<key>output</key>
+				<string>discard</string>
+				<key>uuid</key>
+				<string>6E0AF71F-3BB8-4001-884C-8D8C319949B9</string>
+			</dict>
+			<key>command</key>
+			<string>executeCommandWithOptions:</string>
+		</dict>
+	</array>
+	<key>keyEquivalent</key>
+	<string>@s</string>
+	<key>name</key>
+	<string>Clean whitespace</string>
+	<key>useGlobalClipboard</key>
+	<true/>
+	<key>uuid</key>
+	<string>F3C9822A-D988-46CE-9E9F-ACA542343CE3</string>
+</dict>
+</plist>
