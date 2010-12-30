@@ -9,7 +9,7 @@
 require ENV["TM_SUPPORT_PATH"] + "/lib/tm/executor"
 
 TextMate::Executor.make_project_master_current_document
-TextMate::Executor.run("v8", ENV["TM_FILEPATH"])
+TextMate::Executor.run("node", ENV["TM_FILEPATH"])
 </string>
 	<key>input</key>
 	<string>none</string>
