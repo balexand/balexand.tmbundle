@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>should "$1" do
+	<string>it "$1" do
   $2
 end</string>
 	<key>name</key>
-	<string>should</string>
+	<string>it</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>should</string>
+	<string>it</string>
 	<key>uuid</key>
-	<string>167485D7-6703-4321-9271-8C8A5BF1E42E</string>
+	<string>D57921C2-7FB0-460B-B21D-1661FD113EA8</string>
 </dict>
 </plist>
