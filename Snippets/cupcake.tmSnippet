@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Cupcake ipsum dolor sit amet tootsie roll carrot cake jelly-o. Chocolate jelly pie muffin dessert powder. Soufflé liquorice marzipan oat cake chocolate bar. Cotton candy macaroon marzipan caramels icing croissant icing danish chocolate. Chocolate bar candy canes muffin bonbon apple pie. Gingerbread jujubes toffee carrot cake cake tiramisu macaroon. Ice cream jelly-o donut applicake gingerbread gingerbread tootsie roll ice cream candy canes. Ice cream candy canes cake croissant tootsie roll chocolate topping macaroon jelly-o. Sweet roll chupa chups cake gummies bonbon. Cake bear claw chocolate apple pie donut jelly. Jelly beans sesame snaps gingerbread tiramisu cake marshmallow liquorice. Bear claw croissant donut liquorice candy chocolate liquorice brownie. Muffin dessert sweet roll fruitcake chocolate bar dessert.</string>
+	<key>name</key>
+	<string>cupcake</string>
+	<key>tabTrigger</key>
+	<string>cupcake</string>
+	<key>uuid</key>
+	<string>87BD0799-DB14-4A92-A08D-7568BA21BF91</string>
+</dict>
+</plist>
